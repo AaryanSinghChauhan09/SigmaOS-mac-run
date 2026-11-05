@@ -1,0 +1,6 @@
+[component]
+name = "SigmaOS-mac-run"
+tier = 2
+description = "Apple Silicon and Mac hardware bootloader shim and device tree parser"
+contracts = ['mac-run-shim', 'm1-device-tree-parser', 'nvram-loader']
+upstream_inspirations = ['https://github.com/omacom/omarchy-mac']
