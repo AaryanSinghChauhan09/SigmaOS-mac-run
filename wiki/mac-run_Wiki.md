@@ -1,18 +1,18 @@
-# SigmaOS-SigmaOS-mac-run Component Wiki
+# SigmaOS-mac-run Component Wiki
 
 ## Overview
-SigmaOS-SigmaOS-mac-run provides Run SigmaOS tooling on macOS host for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
+SigmaOS-mac-run provides component for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
 
 ## Principles
-- Single Responsibility
-- SigmaOS-mac-run Abstraction
-- Fail-Fast on SigmaOS-mac-run Initialization Errors
-- Deterministic SigmaOS-mac-run Setup
-- Clear Abstraction Over SigmaOS-mac-run APIs
-- Composition over Inheritance for SigmaOS-mac-run extensions
+- **Single Responsibility**: Each component has a single well-defined purpose
+- **SigmaOS-mac-run Abstraction**: Clear abstraction over the component's APIs and functionality
+- **Fail-Fast on SigmaOS-mac-run Initialization Errors**: Fail-fast principle for initialization errors
+- **Deterministic SigmaOS-mac-run Setup**: Deterministic initialization and configuration
+- **Clear Abstraction Over SigmaOS-mac-run APIs**: Well-defined, clear APIs
+- **Composition over Inheritance for SigmaOS-mac-run extensions**: Use composition patterns for extensions
 
 ## Architecture
-SigmaOS-SigmaOS-mac-run follows a SigmaOS-mac-run pattern:
+SigmaOS-mac-run follows a SigmaOS-mac-run pattern:
 - **SigmaOS-mac-run Core**: Provides SigmaOS-mac-run support, SigmaOS-mac-run management, and SigmaOS-mac-run tracking
 - **Management**: Supports SigmaOS-mac-run management, SigmaOS-mac-run configuration, and SigmaOS-mac-run lifecycle
 - **Tracking**: Supports SigmaOS-mac-run status, SigmaOS-mac-run tracking, and SigmaOS-mac-run lifecycle
@@ -20,10 +20,10 @@ SigmaOS-SigmaOS-mac-run follows a SigmaOS-mac-run pattern:
 
 ## API
 The component provides the following public APIs:
--  - Manage a SigmaOS-mac-run by given configuration
--  - Register a SigmaOS-mac-run by given name
--  - Get SigmaOS-mac-run status and SigmaOS-mac-run availability
--  - Track SigmaOS-mac-run management and SigmaOS-mac-run tracking
+- Manage a SigmaOS-mac-run by given configuration
+- Register a SigmaOS-mac-run by given name
+- Get SigmaOS-mac-run status and SigmaOS-mac-run availability
+- Track SigmaOS-mac-run management and SigmaOS-mac-run tracking
 - Error types for SigmaOS-mac-run failure scenarios or unsupported SigmaOS-mac-run types
 
 ## Test Structure (Arrange-Act-ASSERT)
@@ -32,11 +32,8 @@ All tests follow the AAA pattern:
 2. **Act**: Execute the code under test (SigmaOS-mac-run init, SigmaOS-mac-run management)
 3. **Assert**: Verify the expected SigmaOS-mac-run results
 
-Example:
-
-
 ## Development
-- Follows Rust best practices with 
+- Follows best practices with clear abstraction boundaries
 - SigmaOS-mac-run initialization is best-effort; gracefully degrades on unsupported configurations
 - Comprehensive error types for all SigmaOS-mac-run failure scenarios
 - Unit tests provided for SigmaOS-mac-run management and configuration
